@@ -193,6 +193,7 @@ configure_output_dir <- function(output_dir = NULL) {
 #' @param input_processed processed input data frame
 #' @param final_res final pathfindR result data frame
 #' @param dir_for_report directory to render the report in
+#' @export
 create_HTML_report <- function(input, input_processed, final_res, dir_for_report) {
     message("## Creating HTML report")
     rmarkdown::render(input = system.file("rmd", "results.Rmd", package = "pathfindR"),
